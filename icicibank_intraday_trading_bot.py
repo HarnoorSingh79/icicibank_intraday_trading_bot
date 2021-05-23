@@ -155,7 +155,7 @@ while tries > 0:
         else:
             print('Buy order limit is exceeded')
 
-    elif change_in_percent > 0.35:
+    elif 0.50 >= change_in_percent > 0.35:
         if order < 3:
             buy_order()
             order += 1
@@ -179,7 +179,7 @@ while tries > 0:
         else:
             print('sell order limit is exceeded')
 
-    elif change_in_percent < -0.35:
+    elif -0.50 <= change_in_percent < -0.35:
         if order > -3:
             sell_order()
             order -= 1
